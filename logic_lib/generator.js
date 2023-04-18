@@ -1,15 +1,15 @@
 import pluralize from "pluralize";
 export default function generator(word,altword,adj,aadj) {
-    //console.log("generator run with" + word)
     if (altword==="") {
         altword="black";
     }
     if (adj==="") {
-        altword="filthy";
+        adj="filthy";
     }
     if (aadj==="") {
         altword="black";
     }
+    console.log("generator run with " + word + " 1" + altword + " 2" + adj + " 3" + aadj);
     const wordP = pluralize.plural(word);
     const altwordP = pluralize.plural(altword);
     //return ("Kill {niggers}. Behead niggers. Roundhouse kick a nigger into the concrete. Slam dunk a nigger baby into
